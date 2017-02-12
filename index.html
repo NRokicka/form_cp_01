@@ -3,88 +3,76 @@
 
 <head lang="en">
     <meta charset="UTF-8">
-   
+
     <title>Forms Color PRO</title>
-    
-    
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
- 
-
-<body>
-    <header>
-    <h1>Color PRO</h1>
-     </header>
-    
-     <main class="main">
-   
-    <!-- спрятанный якорь, чтобы избежать прыжков http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
-    <a class="hiddenanchor" id="tosubscribe"></a>
-    <a class="hiddenanchor" id="tologin"></a>
-    <div id="wrapper">
-        <div id="login" class="animate form">
-            <form  action="mysuperscript.php" autocomplete="on">
-                <h1>Log in</h1>
-                <p>
-                    <label for="username" class="uname" data-icon="u" > Your email or username </label>
-                    <input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
-                </p>
-                <p>
-                    <label for="password" class="youpasswd" data-icon="p"> Your password </label>
-                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" />
-                </p>
-                <p class="keeplogin">
-                    <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />
-                    <label for="loginkeeping">Keep me logged in</label>
-                </p>
-                <p class="login button">
-                    <input type="submit" value="Login" />
-                </p>
-                <p class="change_link">
-                    Not a member yet ?
-                    <a href="#tosubscribe" class="to_subscribe">Join us</a>
-                </p>
-            </form>
-        </div>
- 
-        <div id="subscribe" class="animate form">
-            <form  action="mysuperscript.php" autocomplete="on">
-                <h1> Sign up </h1>
-                <p>
-                    <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
-                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
-                </p>
-                <p>
-                    <label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
-                    <input id="emailsignup" name="emailsignup" required="required" type="text" placeholder="mysupermail@mail.com"/>
-                </p>
-                <p>
-                    <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
-                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
-                </p>
-                <p>
-                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
-                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
-                </p>
-                <p class="signin button">
-                    <input type="submit" value="Sign up"/>
-                </p>
-                <p class="change_link">
-                    Already a member ?
-                    <a href="#tologin" class="to_subscribe"> Go and log in </a>
-                </p>
-            </form>
-        </div>
-    </div>
 
 
-   
-  </main>
-   <footer class="footer">
-       <p>all rignt</p>
-     </footer>
-   
-   
-</body>
+    <body>
+        <header>
+            <h1>Color PRO</h1>
+        </header>
+        <main id="container">
+            
+            <a class="hiddenanchor" id="tosubscribe"></a>
+            <a class="hiddenanchor" id="tologin"></a>
+
+            <div id="wrapper">
+                <div id="login" class="animate form">
+                    <!--action="mysuperscript.php" autocomplete="on"-->
+                    <form id="MyForm">
+                    <p>
+                        <label for="username" class="uname">Логін</label>
+                        <input id="username" type="text" name="username">
+                    </p>
+                    <p>
+                        <label for="pswd" class="youpasswd">Пароль</label><br>
+                        <input id="pswd" type="password" name="pswd" class="form_input">
+                    </p>
+                    <p class="signin button">
+                        <input id="submit" type="submit" value="Увійти">
+                    </p>
+                    <p class="change_link">
+                        <a href="#tosubscribe" class="to_subscribe">Створити обліковий запис</a>
+                    </p>
+                    </form>
+                </div>
+
+                <div id="subscribe" class="animate form">
+
+                    <form id="MyFormUp">
+                        
+                        <p>
+                            <label for="usernamesignup" class="uname">Логін</label>
+                            <input id="usernamesignup" type="text" name="usernamesignup">
+                        </p>
+                        <p>
+                            <label for="passwordsignup" class="youpasswd">Пароль</label>
+                            <input id="passwordsignup" type="password" name="passwordsignup">
+                        </p>
+                        <p>
+                            <label for="passwordsignup_confirm" class="youpasswd">Підтвердити пароль</label>
+                            <input id="passwordsignup_confirm" type="password" name="passwordsignup_confirm">
+                        </p>
+                        <p class="signin button">
+                            <input id="submit" type="submit" value="Створити обліковий запис" class="btn_sign_up">
+                        </p>
+                        <p class="change_link">
+                            <a href="#tologin" class="to_subscribe">Залогуватись</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <p>all rignt</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="js/jquery.validate.js"></script>
+        <script type="text/javascript" src="js/myscript.js"></script>
+        <script type="text/javascript" src="js/myscriptup.js"></script>
+    </body>
 
 </html>
