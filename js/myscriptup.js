@@ -19,7 +19,7 @@ $().ready(function(){
             passwordsignup_confirm: {
                 required: true,
                 minlength: 5,
-                equalTo: "#password"
+                equalTo: "#passwordsignup"
             },
            
        },
@@ -48,8 +48,8 @@ $().ready(function(){
        }
 
     });
-
 });
+
 
 $(function() {
     $("#submit").click(function(e) {
