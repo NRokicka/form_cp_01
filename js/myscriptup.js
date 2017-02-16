@@ -66,9 +66,9 @@ $(function() {
          },
             dataType: "json"
         })
-        .done(function(data){
+        /*.done(function(data){*/
             $("#wrapper").remove();
-        });
+       /* });*/
     });
 });
 

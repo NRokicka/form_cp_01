@@ -1,4 +1,4 @@
-
+/*
 $().ready(function(){
 
     $("#MyForm").validate({
@@ -37,7 +37,7 @@ $().ready(function(){
 
     });
 
-});
+});*/
 $(function() {
    
     $("#submit").click(function(e) {
@@ -52,7 +52,7 @@ $(function() {
             dataType: "json"
         })
         .done(function(data){
-            $("#wrapper").fadeToggle(500);
+            $("#wrapper").remove();
         });
         
     });
