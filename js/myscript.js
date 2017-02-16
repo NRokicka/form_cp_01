@@ -50,7 +50,7 @@ $(function() {
             dataType: "json"
         })
         .done(function(data){
-             $("#wrapper").fadeToggle(500);
+             $("#container").fadeToggle(500);
         });
         
     });
