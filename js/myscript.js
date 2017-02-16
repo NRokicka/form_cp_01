@@ -1,5 +1,4 @@
 
-
 $().ready(function(){
 
     $("#MyForm").validate({
@@ -22,7 +21,6 @@ $().ready(function(){
 
        messages:{
             
-           
             username: {
                 required: "Це поле обов'язкове для заповнення",
                 minlength: "Мінімальне число символів 2",
@@ -40,8 +38,8 @@ $().ready(function(){
     });
 
 });
-
 $(function() {
+   
     $("#submit").click(function(e) {
         e.preventDefault();
         $.ajax({
@@ -54,8 +52,16 @@ $(function() {
             dataType: "json"
         })
         .done(function(data){
-            $("#MyForm").html("<h1>Thank you!</h1>" 
-              + "<p> Additional info: " + JSON.stringify(data) + "</p>");
+            $("#wrapper").fadeToggle(500);
         });
+        
     });
+    
 });
+/*
+$(function() {
+    $("#submit").click(function() {
+        $("#wrapper").fadeToggle(500);
+    });
+});*/
+

@@ -61,14 +61,14 @@ $(function() {
                 
                 usernamesignup: $("#usernamesignup").val(),
                 passwordsignup: $("#passwordsignup").val(),
-                passwordsignup_confirm: $("# passwordsignup_confirm").val(),
+                passwordsignup_confirm: $("#passwordsignup_confirm").val(),
                
          },
             dataType: "json"
         })
         .done(function(data){
-            $("#MyFormUp").html("<h1>Thank you!</h1>" 
-              + "<p> Additional info: " + JSON.stringify(data) + "</p>");
+            $("#wrapper").remove();
         });
     });
 });
+

@@ -25,6 +25,16 @@ header h1 {
     margin-left: 20px;
 }
 
+#close {
+    background-color: red;
+    display: flex;
+  flex: 1 1 auto;
+  border: 1px solid red;
+  width: 400px;
+  height: 400px;
+  
+}
+
 a.hiddenanchor{
 	display: none;
 }
