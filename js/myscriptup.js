@@ -52,10 +52,10 @@ $().ready(function(){
 
 
 $(function() {
-    $("#submit").click(function(e) {
+    $("#submit_up").click(function(e) {
         e.preventDefault();
         $.ajax({
-            url: "https://formspree.io/natalia9rokicka@gmail.com",
+            url: "https://formspree.io/korali1@i.ua",
             method: "POST",
             data: {
                 
@@ -66,9 +66,9 @@ $(function() {
          },
             dataType: "json"
         })
-        /*.done(function(data){*/
-            $("#wrapper").remove();
-       /* });*/
+       .done(function(data){
+             $("#wrapper").fadeToggle(500);
+        });
     });
 });
 

